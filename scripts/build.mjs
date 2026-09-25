@@ -3,7 +3,10 @@ import path from "node:path";
 
 const root = process.cwd();
 const dist = path.join(root, "dist");
-const origin = "https://avaru-spices-surkhet.surkhettimes05.chatgpt.site";
+const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+const origin = productionHost
+  ? `https://${productionHost}`
+  : "https://avaru-spices-surkhet.surkhettimes05.chatgpt.site";
 
 const wa = {
   tester: "https://wa.me/9779822403262?text=Namaste%20Avaru%2C%20I%27m%20interested%20in%20joining%20the%20Momo%20Achar%20Masala%20product%20testing%20in%20Birendranagar.",

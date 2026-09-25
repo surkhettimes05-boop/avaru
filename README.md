@@ -13,6 +13,9 @@ npm run check
 
 Serve the generated `dist` directory with any static web server.
 
+Vercel uses `vercel.json` to run the same build and publish `dist`. Canonical
+URLs automatically use the project's Vercel production hostname during builds.
+
 ## Project structure
 
 - `scripts/build.mjs` — page content, metadata, language routes, sitemap and robots generation
