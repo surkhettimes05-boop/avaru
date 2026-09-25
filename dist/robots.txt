@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+# Private preview. Enable indexing only after a public domain is approved.
