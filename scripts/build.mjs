@@ -11,6 +11,7 @@ const origin = productionHost
 const wa = {
   tester: "https://wa.me/9779822403262?text=Namaste%20Avaru%2C%20I%27m%20interested%20in%20joining%20the%20Momo%20Achar%20Masala%20product%20testing%20in%20Birendranagar.",
   consumer: "https://wa.me/9779822403262?text=Namaste%20Avaru%2C%20I%20want%20to%20know%20where%20I%20can%20get%20Avaru%20Momo%20Achar%20Masala%20or%20join%20the%20current%20testing%20in%20Birendranagar.%20Please%20share%20current%20availability.",
+  feedback: "https://wa.me/9779822403262?text=Namaste%20Avaru%2C%20I%20want%20to%20test%20Momo%20Achar%20Masala%20and%20share%20feedback.%20My%20location%3A%20__%20I%20usually%20make%20momo%20achar%3A%20__%20What%20I%20care%20about%20most%20(taste%2Ftimur%2Fheat%2Fease)%3A%20__",
   retailer: "https://wa.me/9779822403262?text=Namaste%20Avaru%2C%20I%20run%20a%20retail%20or%20distribution%20business%20and%20want%20to%20stock%20Avaru%20Momo%20Achar%20Masala.%20Shop%2Fbusiness%20name%3A%20__%20Location%3A%20__%20Expected%20quantity%3A%20__",
   general: "https://wa.me/9779822403262?text=Namaste%20Avaru%2C%20I%20have%20a%20general%20enquiry."
 };
@@ -41,7 +42,8 @@ const pages = {
           <span class="status status-live">वीरेन्द्रनगरमा परीक्षण हुँदैछ • Testing in Birendranagar</span>
           <h1 class="bilingual-title"><span class="ne-line">मोमो अचार बनाउने सुरुवात अझ स्पष्ट।</span><span class="en-line">A clearer starting point for momo achar.</span></h1>
           <p class="lede"><strong>अवरु मोमो अचार मसाला</strong> गोलभेँडा–टिमुरको मोमो डुबाउने अचार बनाउन प्रयोग हुने <strong>सुक्खा मसलाको मिश्रण</strong> हो।</p>
-          <p class="lede-en">Avaru Momo Achar Masala is a <strong>dry spice blend</strong> for preparing tomato-and-timur momo dipping achar. It is not ready-made achar and it is not momo filling masala.</p>
+          <p class="lede-en">Avaru Momo Achar Masala is a <strong>dry spice blend</strong> for preparing tomato-and-timur momo dipping achar.</p>
+          <div class="not-ready-callout"><strong>This is dry masala to make momo achar — not ready achar.</strong><span>यो मोमो अचार बनाउन प्रयोग हुने सुक्खा मसला हो — तयार अचार होइन।</span></div>
           <div class="actions buy-actions">
             <a class="button" href="${wa.consumer}" target="_blank" rel="noopener">कहाँ पाइन्छ? • Where to buy</a>
             <a class="button button-outline" href="${wa.retailer}" target="_blank" rel="noopener">पसलमा राख्नुस् • Stock Avaru</a>
@@ -63,6 +65,49 @@ const pages = {
       <section class="proof-split wrap">
         <figure class="hero-media proof-media"><img src="/assets/momo-hero.webp" width="1536" height="1024" alt="Steamed momo beside tomato-and-timur dipping achar"><figcaption>यो तयार अचार हो—प्याकभित्रको उत्पादन होइन। • This is the finished dipping achar, not what is sold inside the pack.</figcaption></figure>
         <div class="proof-copy"><p class="eyebrow">के गर्छ? • What it helps you make</p><h2>मसला → अचार बनाउने प्रक्रिया → मोमोसँग खाने तयार अचार</h2><p>Avaru sells the <strong>dry masala blend</strong>. You use it as part of your achar preparation. The bowl beside your momo is the finished result.</p><div class="truth-pill">सुक्खा मसला • Dry blend</div><div class="truth-pill">Ready-made sauce होइन • Not ready-made sauce</div><div class="truth-pill">Filling masala होइन • Not momo filling masala</div></div>
+      </section>
+
+      <section class="use-flow-section">
+        <div class="wrap">
+          <div class="section-head compact-head"><div><p class="eyebrow">३ चरण • 3 simple steps</p><h2>Dry masala → Make achar → Serve with momo.</h2></div></div>
+          <ol class="use-flow" aria-label="How Avaru Momo Achar Masala is used">
+            <li><span class="flow-number">01</span><div class="flow-icon" aria-hidden="true">✦</div><strong>सुक्खा मसला<br><small>Dry masala</small></strong><p>Open the Avaru dry spice blend used for momo dipping achar.</p></li>
+            <li><span class="flow-number">02</span><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-icon" aria-hidden="true">◉</div><strong>अचार बनाउनुहोस्<br><small>Make achar</small></strong><p>Use the current test dosage while preparing your tomato-and-timur achar base.</p></li>
+            <li><span class="flow-number">03</span><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-icon" aria-hidden="true">🥟</div><strong>मोमोसँग पस्कनुहोस्<br><small>Serve with momo</small></strong><p>Blend to your preferred consistency, taste, then serve beside hot momo.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="recipe-testing wrap">
+        <article class="recipe-card">
+          <p class="eyebrow">परीक्षण प्रयोग विधि • Trial usage guide</p>
+          <h2>How to use the current test sample</h2>
+          <p class="recipe-note"><strong>Not the final retail recipe.</strong> Exact masala quantity is one of the things being tested. Testers should use the dosage supplied with their current sample.</p>
+          <ol class="recipe-steps">
+            <li><span>1</span><div><strong>Prepare the achar base.</strong><p>Cook or roast tomato and your usual supporting ingredients such as garlic/chilli according to your household method.</p></div></li>
+            <li><span>2</span><div><strong>Add the current Avaru test dosage.</strong><p>Add the amount supplied with the trial sample, then blend or grind it into the tomato base.</p></div></li>
+            <li><span>3</span><div><strong>Finish to your taste.</strong><p>Adjust salt, acidity and water/consistency as needed. Serve beside momo and note what you would change.</p></div></li>
+          </ol>
+        </article>
+        <aside class="testing-focus">
+          <span class="status status-live">Active testing • वीरेन्द्रनगर</span>
+          <p class="eyebrow">हामी के परीक्षण गर्दैछौँ? • What we are testing</p>
+          <h2>Your feedback decides the final product.</h2>
+          <ul class="testing-points"><li><strong>Taste balance</strong><span>Is the finished achar balanced and satisfying?</span></li><li><strong>Timur aroma</strong><span>Too weak, right, or overpowering?</span></li><li><strong>Heat level</strong><span>Does the spice level fit everyday households?</span></li><li><strong>Ease + consistency</strong><span>Are the instructions easy, and can you get a similar result again?</span></li></ul>
+          <a class="button button-dark feedback-button" href="${wa.feedback}" target="_blank" rel="noopener">Test it + send feedback on WhatsApp</a>
+        </aside>
+      </section>
+
+      <section class="future-masalas">
+        <div class="wrap">
+          <div class="section-head future-head"><div><p class="eyebrow">अवरु एउटा उत्पादन मात्र होइन • Beyond one product</p><h2>One focused first product. A larger Nepali masala brand behind it.</h2></div><p class="section-note">These are exploration directions, not launched products. Momo Achar Masala stays the priority until it earns its place.</p></div>
+          <div class="future-grid">
+            <article class="future-card future-card--active"><span>01 • Testing now</span><h3>मोमो अचार मसाला<br><small>Momo Achar Masala</small></h3><p>A specific dry blend for the achar served with momo.</p></article>
+            <article class="future-card"><span>02 • Exploring next</span><h3>दाल मसाला<br><small>Dal Masala</small></h3><p>A simple everyday blend aimed at making ordinary dal more aromatic and consistent.</p></article>
+            <article class="future-card"><span>03 • Exploring next</span><h3>तरकारी मसाला<br><small>Everyday Tarkari Masala</small></h3><p>An everyday vegetable masala built for common Nepali home cooking rather than restaurant-style heaviness.</p></article>
+            <article class="future-card"><span>04 • Exploring next</span><h3>मासु मसाला<br><small>Meat Masala</small></h3><p>A future blend for familiar Nepali-style meat curries, to be validated only after the first products work.</p></article>
+          </div>
+        </div>
       </section>
 
       <section class="pack-proof-section">
@@ -106,6 +151,7 @@ const pages = {
           <h1 class="bilingual-title"><span class="ne-line">मोमो अचार बनाउने सुरुवात अझ स्पष्ट।</span><span class="en-line">A clearer starting point for momo achar.</span></h1>
           <p class="lede"><strong>अवरु मोमो अचार मसाला</strong> गोलभेँडा–टिमुरको मोमो डुबाउने अचार बनाउन प्रयोग हुने <strong>सुक्खा मसलाको मिश्रण</strong> हो। यो तयार अचार होइन र मोमोको भराइको मसला पनि होइन।</p>
           <p class="lede-en">A dry spice blend for preparing tomato-and-timur momo dipping achar.</p>
+          <div class="not-ready-callout"><strong>यो मोमो अचार बनाउन प्रयोग हुने सुक्खा मसला हो — तयार अचार होइन।</strong><span>This is dry masala to make momo achar — not ready achar.</span></div>
           <div class="actions buy-actions">
             <a class="button" href="${wa.consumer}" target="_blank" rel="noopener">कहाँ पाइन्छ? • Where to buy</a>
             <a class="button button-outline" href="${wa.retailer}" target="_blank" rel="noopener">पसलमा राख्नुस् • Stock Avaru</a>
@@ -127,6 +173,49 @@ const pages = {
       <section class="proof-split wrap">
         <figure class="hero-media proof-media"><img src="/assets/momo-hero.webp" width="1536" height="1024" alt="गोलभेँडा र टिमुरको अचारसँग राखिएको मोमो"><figcaption>यो तयार अचार हो—प्याकभित्रको उत्पादन होइन। • This is the finished dipping achar, not what is sold inside the pack.</figcaption></figure>
         <div class="proof-copy"><p class="eyebrow">के गर्छ? • What it helps you make</p><h2>मसला → अचार बनाउने प्रक्रिया → मोमोसँग खाने तयार अचार</h2><p>अवरुले बेच्ने उत्पादन <strong>सुक्खा मसलाको मिश्रण</strong> हो। त्यसलाई अचार बनाउने प्रक्रियामा प्रयोग गरिन्छ। मोमोसँगको कचौरामा आउने अचार अन्तिम नतिजा हो।</p><div class="truth-pill">सुक्खा मसला • Dry blend</div><div class="truth-pill">तयार सस होइन • Not ready-made sauce</div><div class="truth-pill">मोमो भराइको मसला होइन • Not filling masala</div></div>
+      </section>
+
+      <section class="use-flow-section">
+        <div class="wrap">
+          <div class="section-head compact-head"><div><p class="eyebrow">३ चरण • 3 simple steps</p><h2>सुक्खा मसला → अचार बनाउनुहोस् → मोमोसँग पस्कनुहोस्</h2></div></div>
+          <ol class="use-flow" aria-label="अवरु मोमो अचार मसाला प्रयोग गर्ने तीन चरण">
+            <li><span class="flow-number">०१</span><div class="flow-icon" aria-hidden="true">✦</div><strong>सुक्खा मसला<br><small>Dry masala</small></strong><p>मोमो डुबाउने अचारका लागि अवरुको सुक्खा मसलाको मिश्रण खोल्नुहोस्।</p></li>
+            <li><span class="flow-number">०२</span><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-icon" aria-hidden="true">◉</div><strong>अचार बनाउनुहोस्<br><small>Make achar</small></strong><p>गोलभेँडा–टिमुरको अचारको base बनाउँदा हालको test dosage प्रयोग गर्नुहोस्।</p></li>
+            <li><span class="flow-number">०३</span><div class="flow-arrow" aria-hidden="true">→</div><div class="flow-icon" aria-hidden="true">🥟</div><strong>मोमोसँग पस्कनुहोस्<br><small>Serve with momo</small></strong><p>आफूलाई मन पर्ने consistency बनाउनुहोस्, स्वाद जाँच्नुहोस् र तातो मोमोसँग पस्कनुहोस्।</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="recipe-testing wrap">
+        <article class="recipe-card">
+          <p class="eyebrow">परीक्षण प्रयोग विधि • Trial usage guide</p>
+          <h2>हालको test sample कसरी प्रयोग गर्ने?</h2>
+          <p class="recipe-note"><strong>यो अन्तिम retail recipe होइन।</strong> कति मसला प्रयोग गर्ने भन्ने कुरा पनि परीक्षणमै छ। Tester ले sample सँग दिइएको हालको dosage प्रयोग गर्नुपर्छ।</p>
+          <ol class="recipe-steps">
+            <li><span>१</span><div><strong>अचारको base तयार गर्नुहोस्।</strong><p>आफ्नो घरको तरिकाअनुसार गोलभेँडा र सहयोगी सामग्री जस्तै लसुन/खुर्सानी पकाउनु वा पोल्नुहोस्।</p></div></li>
+            <li><span>२</span><div><strong>हालको Avaru test dosage थप्नुहोस्।</strong><p>Trial sample सँग दिइएको मात्रामा मसला हालेर गोलभेँडाको base सँग पिस्नु वा blend गर्नुहोस्।</p></div></li>
+            <li><span>३</span><div><strong>आफ्नो स्वादअनुसार पूरा गर्नुहोस्।</strong><p>नुन, अमिलोपन र पानी/consistency मिलाउनुहोस्। मोमोसँग पस्केर के बदल्नुपर्छ नोट गर्नुहोस्।</p></div></li>
+          </ol>
+        </article>
+        <aside class="testing-focus">
+          <span class="status status-live">वीरेन्द्रनगरमा सक्रिय परीक्षण</span>
+          <p class="eyebrow">हामी के परीक्षण गर्दैछौँ? • What we are testing</p>
+          <h2>तपाईंको feedback ले अन्तिम उत्पादन तय गर्न मद्दत गर्छ।</h2>
+          <ul class="testing-points"><li><strong>स्वादको सन्तुलन</strong><span>तयार अचार सन्तुलित र स्वादिलो छ?</span></li><li><strong>टिमुरको बास्ना</strong><span>कम, ठीक वा धेरै छ?</span></li><li><strong>पिरोको स्तर</strong><span>घरमा नियमित खान मिल्ने स्तर छ?</span></li><li><strong>सजिलोपन + consistency</strong><span>निर्देशन बुझ्न सजिलो छ? फेरि बनाउँदा उस्तै नतिजा आउँछ?</span></li></ul>
+          <a class="button button-dark feedback-button" href="${wa.feedback}" target="_blank" rel="noopener">Test गर्नुहोस् + WhatsApp मा feedback दिनुहोस्</a>
+        </aside>
+      </section>
+
+      <section class="future-masalas">
+        <div class="wrap">
+          <div class="section-head future-head"><div><p class="eyebrow">अवरु एउटा उत्पादन मात्र होइन • Beyond one product</p><h2>पहिलो उत्पादन एकदम focused छ। लक्ष्य भने ठूलो नेपाली मसला brand बनाउने हो।</h2></div><p class="section-note">यी exploration directions हुन्, launched products होइनन्। Momo Achar Masala सफल र उपयोगी नहुन्जेल यही पहिलो प्राथमिकता रहन्छ।</p></div>
+          <div class="future-grid">
+            <article class="future-card future-card--active"><span>०१ • अहिले परीक्षणमा</span><h3>मोमो अचार मसाला<br><small>Momo Achar Masala</small></h3><p>मोमोसँग खाने अचारका लागि specific सुक्खा मसला।</p></article>
+            <article class="future-card"><span>०२ • अर्को exploration</span><h3>दाल मसाला<br><small>Dal Masala</small></h3><p>दैनिक दाललाई सजिलो तरिकाले अझ सुगन्धित र consistent बनाउने सम्भावित blend।</p></article>
+            <article class="future-card"><span>०३ • अर्को exploration</span><h3>तरकारी मसाला<br><small>Everyday Tarkari Masala</small></h3><p>Restaurant-style भारी स्वादभन्दा घरको दैनिक नेपाली तरकारीका लागि बनाइने सम्भावित blend।</p></article>
+            <article class="future-card"><span>०४ • अर्को exploration</span><h3>मासु मसाला<br><small>Meat Masala</small></h3><p>पहिला उत्पादनहरू validate भएपछि नेपाली शैलीको मासुको तरकारीका लागि explore गरिने blend।</p></article>
+          </div>
+        </div>
       </section>
 
       <section class="pack-proof-section">
