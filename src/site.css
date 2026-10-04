@@ -64,7 +64,7 @@ body:lang(ne) .proof-copy h2,body:lang(ne) .standards h2,body:lang(ne) .pack-pro
   .section-note{max-width:680px}
 }
 @media(max-width:560px){
-  body{padding-bottom:68px}
+  body:has(.mobile-buybar){padding-bottom:68px}
   .bilingual-title{font-size:clamp(2.55rem,12.5vw,3.7rem)!important}
   .bilingual-title .en-line{font-size:.4em}
   .status-live{font-size:.66rem;line-height:1.4}
